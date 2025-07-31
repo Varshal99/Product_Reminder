@@ -7,18 +7,23 @@ The **Product Reminder** module for Magento 2 enables automatic email reminders 
 ## Preview
 
 * **Product Attribute (Admin Product Page)**
+  
   ![Enable Product Reminder](readme-images/attribute.png?raw=true "Enable Product Reminder")
 
-* **Menu (Marketing → Product Reminder)**
+* **Admin Menu (Marketing → Product Reminder)**
+  
   ![Menu](readme-images/menu.png?raw=true "Menu")
 
 * **Product Reminder Grid (Marketing → Product Reminder → Product Reminder Email Log)**
+  
   ![Product Reminder Grid](readme-images/grid.png?raw=true "Product Reminder Grid")
 
 * **Configuration (Stores → Configuration → Product Reminder → Product Reminder)**
+  
   ![Product Reminder Configuration](readme-images/configuration.png?raw=true "Product Reminder Grid")
 
 * **Email Template View**
+  
   ![Email Template View](readme-images/email.png?raw=true "Email Template View")
 
 ---
