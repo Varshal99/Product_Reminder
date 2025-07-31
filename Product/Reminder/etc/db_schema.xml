@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="product_reminder_email_log" resource="default" engine="innodb" comment="Product Reminder Email Log">
+        <column name="entity_id" xsi:type="int" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column name="customer_email" xsi:type="text" nullable="false" comment="Customer Email"/>
+        <column name="customer_name" xsi:type="text" nullable="true" comment="Customer Name"/>
+        <column name="product_name" xsi:type="text" nullable="false" comment="Product Name"/>
+        <column name="email_status" xsi:type="text" nullable="false" comment="Email Status"/>
+        <column name="sent_at" xsi:type="timestamp" nullable="true" on_update="false" default="NULL" comment="Email Sent Date"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <index referenceId="PRODUCT_REMINDER_EMAIL_LOG_EMAIL_IDX">
+            <column name="customer_email"/>
+        </index>
+    </table>
+</schema>

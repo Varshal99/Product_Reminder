@@ -1,0 +1,18 @@
+{
+    "product_reminder_email_log": {
+        "column": {
+            "entity_id": true,
+            "customer_email": true,
+            "customer_name": true,
+            "product_name": true,
+            "email_status": true,
+            "sent_at": true
+        },
+        "index": {
+            "PRODUCT_REMINDER_EMAIL_LOG_CUSTOMER_EMAIL": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

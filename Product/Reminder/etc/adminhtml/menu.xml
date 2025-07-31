@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Product_Reminder::main"
+             title="Product Reminder"
+             module="Product_Reminder"
+             sortOrder="90"
+             parent="Magento_Backend::marketing"
+             resource="Product_Reminder::email_log"/>
+
+        <add id="Product_Reminder::email_log"
+             title="Product Reminder Email Log"
+             module="Product_Reminder"
+             sortOrder="10"
+             parent="Product_Reminder::main"
+             action="product_reminder/emaillog/index"
+             resource="Product_Reminder::email_log"/>
+    </menu>
+</config>
